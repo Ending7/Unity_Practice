@@ -14,13 +14,12 @@ namespace CSharp_TextRPG
         archer = 2,
         mage = 3
     }
-    class Player
+    class Player : Creature
     {
         protected PlayerType m_type = PlayerType.none;
-        protected int hp = 0;
-        protected int attack = 0;
+      
 
-        protected Player(PlayerType type)
+        protected Player(PlayerType type) : base(CreatureType.Player)
         {
             m_type = type;
         }
@@ -28,14 +27,10 @@ namespace CSharp_TextRPG
         // 위에 변수들을 protected한 이유는 변수들을 가지고 다른 곳에서 함수를 만들거나, 함부로 접근하여 사용하지 못하도록 하기 위함.
         // 오로지 부모에서 함수를 만들어서 자식으로 상속하여 사용할 뿐임.
         // public으로 하는 이유는 다른 곳에서 '함수'로는 접근할 수 있도록 하기 위함.
-        public void SetInfo(int hp, int attack)
-        {
-            this.hp = hp;
-            this.attack = attack;
-        }
-
-        public int GetHP() { return hp; }
-        public int GetAttack() { return attack; }
+      
+        
+        public PlayerType GetPlayerType() { return m_type; }
+       
 
     }
     class Knight : Player
