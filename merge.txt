@@ -1,0 +1,4 @@
+git subtree add --prefix=CSharp_TextRPG https://github.com/Ending7/CSharp_TextRPG.git
+git subtree add --prefix=Unity_UndeadSurvival_Learn-From-GoldMetal-Utube https://github.com/Ending7/Unity_UndeadSurvival_Learn-From-GoldMetal-Utube.git
+git subtree add --prefix=Unity_2DGamePractice_Learn-From-GoldMetal-Utube https://github.com/Ending7/Unity_2DGamePractice_Learn-From-GoldMetal-Utube.git
+git subtree add --prefix=Unity_GamePractice_Learn-From-GoldMetal-Utube https://github.com/Ending7/Unity_GamePractice_Learn-From-GoldMetal-Utube.git
